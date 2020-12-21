@@ -36,5 +36,5 @@ package.json:
 }
 ```
 
-index.js : Please input your S3 bucket name into '<S3 Bucket_Name>'
+index.js : Please input your S3 bucket name into 'S3 Bucket_Name'
 
