@@ -4,10 +4,10 @@ Resizing JPEG format files by using "resize" query string and Changing JPEG qual
 
 ### Query Parameters:
 
-Resize
-*	https://{cloudfront-domain}/image.jpg?resize=width:hight
+* Resize  
+	https://{cloudfront-domain}/image.jpg?resize=width:hight
 
-*	Resize+Jpeg quality
+*	Resize+Jpeg quality  
 https://{cloudfront-domain}/image.jpg?resize=width:hight&q=quality(1-100)
  
 
