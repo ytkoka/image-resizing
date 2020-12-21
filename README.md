@@ -12,6 +12,8 @@ https://{cloudfront-domain}/image.jpg?resize=width:hight&q=quality(1-100)
  
 
 ### Setting up:
+The Dockerfile is configured to download Amazon Linux and install Node.js 12. x along with dependencies.
+
 Dockerfile:
 ```
 FROM amazonlinux:latest
@@ -35,6 +37,18 @@ package.json:
     }
 }
 ```
+```
+docker build -t amazonlinux/nodejs .
+```
+```
+docker run --rm -v "$(pwd)":/opt -w /opt amazonlinux/nodejs:latest
+```
+index.js : Please input your S3 bucket name into 'S3 Bucket_Name'  
 
-index.js : Please input your S3 bucket name into 'S3 Bucket_Name'
+Package the node_module and index.js  
+```
+zip -r imageresize.zip node_modules/ index.js
+```
+
+
 
