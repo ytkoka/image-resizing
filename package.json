@@ -1,0 +1,9 @@
+{
+    "name": "image-risizing-at-edge",
+    "version": "1.0.0",
+    "description": "A lambda@edge function for resizing JPEG image on Origin response from S3 bucket",
+    "main": "index.js",
+    "dependencies": {
+        "sharp": "^0.26"
+    }
+}
